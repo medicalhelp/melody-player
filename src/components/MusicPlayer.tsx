@@ -93,10 +93,10 @@ const MusicPlayer = () => {
       </button>
 
       {/* Instruction or Progress */}
-      <div className="mt-12 w-full max-w-xs">
+      <div className="mt-12 w-full max-w-xs h-7 flex items-center">
         {isPlaying ? (
           <div 
-            className="progress-track cursor-pointer relative"
+            className="progress-track cursor-pointer relative w-full"
             onClick={handleProgressClick}
           >
             <div 
@@ -109,7 +109,7 @@ const MusicPlayer = () => {
             />
           </div>
         ) : (
-          <p className="text-center text-muted-foreground italic text-lg font-display animate-fade-in">
+          <p className="text-center text-muted-foreground italic text-lg font-display animate-fade-in w-full">
             Click to play
           </p>
         )}
